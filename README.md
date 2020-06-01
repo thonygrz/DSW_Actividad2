@@ -9,14 +9,14 @@ Los fotografos de la vieja escuela han tenido que mejorar sus tecnicas para la c
 ## Diagrama de Clases
 
 <p align="center">
-  <a target="blank"><img src="./src/documentation_resources/java.jpg" width="320" alt="Diagrama de Clases" /></a>
+  <a href="https://drive.google.com/file/d/1cnXsWt1norGl7PHj2RzdhVQSVzRm6Quz/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Clases.png" width="320" alt="Diagrama de Clases" /></a>
 </p>
 
 ## Patrones Utilizados
 
 ### Decorador (Patrón de estructura)
 
-Se eligio usar el patrón decorador, debido a que se menciona "capturar la imagen es identico a como lo realizan las camaras de vieja data", por lo que la función de tomar la foto siempre sera la misma, pero dependiendo del fabricante se tomaran ciertos ajustes, es decir, el comportamiento de tomar la foto sera decorado por los ajustes de cada fabricante. 
+Se eligió usar el patrón decorador, debido a que se menciona "capturar la imagen es identico a como lo realizan las camaras de vieja data", por lo que la función de tomar la foto siempre sera la misma, pero dependiendo del fabricante se realizaran ciertos ajustes, es decir, el comportamiento de tomar la foto sera decorado por los ajustes de cada fabricante. 
 
 Aquí, podemos identificar los siguientes elementos en la implementación de un patrón decorador:
 
@@ -26,12 +26,12 @@ Aquí, podemos identificar los siguientes elementos en la implementación de un 
 
 ### Fabrica (Patrón de Creación)
 
-
+Se eligió usar el patrón fabrica, para obtener una mayor facilidad a la hora de obtener los elementos decorados. Al mismo tiempo, me permite disminuir el acoplamiento y aumentar la cohesión, ya que ahora es responsabilidad de la fabrica devolver la camara decorada necesaria.
 
 ## Diagrama de Secuencia
 
 <p align="center">
-  <a target="blank"><img src="./src/documentation_resources/java.jpg" width="320" alt="Diagrama de Secuencia" /></a>
+  <a href="https://drive.google.com/file/d/1ShIRAGpb9xM9KhhD7eortg5sQg3rV1HW/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Secuencia.png" width="320" alt="Diagrama de Secuencia" /></a>
 </p>
 
 ## Principios SOLID 
