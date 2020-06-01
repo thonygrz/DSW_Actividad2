@@ -10,11 +10,11 @@ public class App {
         Photographer photographer = new Photographer(cameraFactory.getCamera());
         photographer.takePhoto();
 
-        Photographer photographerSony = new Photographer(cameraFactory.getCamera(Producer.SONY));
-        photographerSony.takePhoto();
+        photographer.setCamera(fab.getCamera(Producer.SONY));
+        photographer.takePhoto();
 
-        Photographer photographerCannon = new Photographer(cameraFactory.getCamera(Producer.CANNON));
-        photographerCannon.takePhoto();
+        photographer.setCamera(fab.getCamera(Producer.CANNON));
+        photographer.takePhoto();
 
     }
 }
