@@ -13,4 +13,8 @@ public class Photographer {
     public void takePhoto() {
         this.camera.captureImage();
     }
+
+    public void setCamera (ICamera cam) {
+        this.camera = cam;
+    }
 }
