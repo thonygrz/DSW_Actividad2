@@ -19,10 +19,13 @@ public class CameraFactory {
 
     public ICamera getCamera(Producer tip){
         ICamera camera = new OldCamera();
-        if (tip == Producer.SONY)
-            camera = new SonyDecorator(camera);
-        else if (tip == Producer.CANNON)
-            camera = new CannonDecorator(camera);
+        switch (tip) {
+            case SONY:
+                camera = new SonyDecorator(camera);
+                break;
+            case CANNON:
+                camera = new CannonDecorator(camera);
+        }
         return camera;
     }
 
