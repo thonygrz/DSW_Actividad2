@@ -9,7 +9,7 @@ Los fotografos de la vieja escuela han tenido que mejorar sus tecnicas para la c
 ## Diagrama de Clases
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1cnXsWt1norGl7PHj2RzdhVQSVzRm6Quz/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Clases.png" width="320" alt="Diagrama de Clases" /></a>
+  <a href="https://drive.google.com/file/d/1cnXsWt1norGl7PHj2RzdhVQSVzRm6Quz/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Clases.png"  alt="Diagrama de Clases" /></a>
 </p>
 
 ## Patrones Utilizados
@@ -31,7 +31,7 @@ Se eligió usar el patrón fabrica, para obtener una mayor facilidad a la hora d
 ## Diagrama de Secuencia
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1ShIRAGpb9xM9KhhD7eortg5sQg3rV1HW/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Secuencia.png" width="320" alt="Diagrama de Secuencia" /></a>
+  <a href="https://drive.google.com/file/d/1ShIRAGpb9xM9KhhD7eortg5sQg3rV1HW/view?usp=sharing" target="blank"><img src="./src/documentation_resources/Diagrama de Secuencia.png" alt="Diagrama de Secuencia" /></a>
 </p>
 
 ## Principios SOLID 
@@ -42,11 +42,11 @@ El principio de responsabilidad unica se cumple, ya que cada clase solo tiene un
 
 ### O (Open/Closed Principle)
 
-El principio abierto/cerrado se cumple a medias. En una primera parte se cumple, ya que se usan interfaces y abstracciones en el patrón decorador, por lo que si en un momento se desean añadir otros decoradores o nuevos tipos de camara, solo seria necesario crear estas clases. Sin embargo, al añadirlas habria que realizar unas modificaciones minimas en la clase Fabrica.
+El principio abierto/cerrado se cumple a medias. En una primera parte se cumple, ya que se usan interfaces y abstracciones en el patrón decorador, por lo que si en un momento se desean añadir otros decoradores o nuevos tipos de camara, solo sería necesario crear estas clases. Sin embargo, al añadirlas habria que realizar unas modificaciones minimas en la clase Fabrica.
 
 ### L (Liskov Substitution Principle)
 
-El principio de substitución de Liskow se cumple, ya que se usan e implementan abtracciones, lo cual permitira que si en algún momento se crean nuevas categorias de camaras y nuevas funcionalidades, el camarogrado no deberia por quue preocuparse y podria usar su camara tranquilamente, aún así, si esta es cambiada por otro mas lujosa. Esto se debe a que en todo caso de que exista una expansión del sistema, las subclases no tendrían mas restricciones que las puerclases.
+El principio de substitución de Liskow se cumple, ya que se usan e implementan abstracciones, lo cual permitirá que si en algún momento se crean nuevas categorias de camaras y nuevas funcionalidades, el fotografo no sufra efectos y pueda usar su camara tranquilamente, aunque esta sea cambiada por otra. Esto se debe, a que si en un futuro ocurre una expansión del sistema, las subclases no tendrían más restricciones que las superclases.
 
 ### I (Interface Segregation Principle)
 
@@ -54,7 +54,7 @@ El principio de segregación de interfaces se cumple, ya que la misma sencillez 
 
 ### D (Dependency Inversion Principle)
 
-El principio de inversión de dependencias se cumple, ya que los elementos de alto nivel dependen de interfaces al igual que los elementos de bajo nivel. Esto se puede observar en el diagrama de clases en donde nunca hay una relación directa entre dos elementos concretos, siempre hay una interfaz/abstracción de por medio.
+El principio de inversión de dependencias se cumple, ya que los elementos de alto nivel dependen de interfaces, al igual que los elementos de bajo nivel. Esto se puede observar en el diagrama de clases en donde nunca hay una relación directa entre dos elementos concretos, siempre hay una interfaz/abstracción de por medio.
 
 ## Lenguaje Utilizado
 
