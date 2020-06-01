@@ -16,7 +16,7 @@ Los fotografos de la vieja escuela han tenido que mejorar sus tecnicas para la c
 
 ### Decorador (Patrón de estructura)
 
-Se eligió usar el patrón decorador, debido a que se menciona "capturar la imagen es identico a como lo realizan las camaras de vieja data", por lo que la función de tomar la foto siempre sera la misma, pero dependiendo del fabricante se realizaran ciertos ajustes, es decir, el comportamiento de tomar la foto sera decorado por los ajustes de cada fabricante. 
+Se eligió usar el patrón decorador, debido a que se menciona "capturar la imagen es identico a como lo realizan las camaras de vieja data", por lo que la función de tomar la foto siempre sera la misma pero dependiendo del fabricante se realizaran ciertos ajustes, es decir, el comportamiento de tomar la foto sera decorado por los ajustes de cada fabricante. 
 
 Aquí, podemos identificar los siguientes elementos en la implementación de un patrón decorador:
 
@@ -26,7 +26,7 @@ Aquí, podemos identificar los siguientes elementos en la implementación de un 
 
 ### Fabrica (Patrón de Creación)
 
-Se eligió usar el patrón fabrica, para obtener una mayor facilidad a la hora de obtener los elementos decorados. Al mismo tiempo, me permite disminuir el acoplamiento y aumentar la cohesión, ya que ahora es responsabilidad de la fabrica devolver la camara decorada necesaria.
+Se eligió usar el patrón fabrica, para obtener una mayor facilidad a la hora de obtener los elementos decorados. Al mismo tiempo, permite disminuir el acoplamiento y aumentar la cohesión, ya que ahora es responsabilidad de la fabrica devolver la camara decorada necesaria.
 
 ## Diagrama de Secuencia
 
@@ -46,7 +46,7 @@ El principio abierto/cerrado se cumple a medias. En una primera parte se cumple,
 
 ### L (Liskov Substitution Principle)
 
-El principio de substitución de Liskow se cumple, ya que se usan e implementan abstracciones, lo cual permitirá que si en algún momento se crean nuevas categorias de camaras y nuevas funcionalidades, el fotografo no sufra efectos y pueda usar su camara tranquilamente, aunque esta sea cambiada por otra. Esto se debe, a que si en un futuro ocurre una expansión del sistema, las subclases no tendrían más restricciones que las superclases.
+El principio de substitución de Liskov se cumple, ya que se usan e implementan abstracciones, lo cual permitirá que si en algún momento se crean nuevas categorias de camaras y nuevas funcionalidades, el fotografo no sufra efectos y pueda usar su camara tranquilamente, aunque esta sea cambiada por otra. Esto se debe, a que si en un futuro ocurre una expansión del sistema, las subclases no tendrían más restricciones que las superclases.
 
 ### I (Interface Segregation Principle)
 
